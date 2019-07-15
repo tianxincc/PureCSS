@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="css/layouts/pure-min.css" >
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+	<style>
+    	.button-red {
+            font-size: 50%;
+			color:#FDFDFD;
+			 background: rgb(202, 60, 60); /* this is a maroon */
+        }
+		.button-green {
+            font-size: 50%;
+			color:#FDFDFD;
+			background: rgb(28, 184, 65); /* this is a green */
+        }
+		.button-blue {
+            font-size: 50%;
+			color:#FDFDFD;
+			 background: rgb(66, 184, 221); 
+        }
+		
+    </style>
+    
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">标本追溯系统</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">首页</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">临床管理</a></li>
+                <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                    <a href="consult.html" class="pure-menu-link">调阅管理</a>
+                </li>
+                <li class="pure-menu-item"><a href="print.html" class="pure-menu-link">门诊打印</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <!--<h1>WEB调阅</h1> -->
+            <h2>临床病例调阅</h2>
+        </div>
+
+        <div class="left" style="margin-left:2%">
+            <p>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                        	<th>病理号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>申请号</th>
+                            <th>门诊号</th>
+                            <th>住院号</th>
+                            <th>报告日期</th>
+                            <th>报告状态</th>
+                            <th>送检科室</th>
+                            <th>送检医生</th>
+                            <th>延期原因</th>
+                            <th>操作</th>
+                            
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                            	<a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                            </td>	
+                        </tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                         	<td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td>
+                        </tr>
+                
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td>
+                        </tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td>
+                        </tr>
+                
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td></tr>
+                        <tr class="pure-table-odd">
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td>
+                        </tr>
+                
+                        <tr>
+                            <td>000001</td>
+                            <td>張三</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>SQ001</td>
+                            <td>MZ001</td>
+                            <td>ZY001</td>
+                            <td>2018-09-11</td>
+                            <td>已诊断</td>
+                            <td>门诊</td>
+                            <td>张三</td>
+                            <td>免疫组化</td>
+                            <td>
+                                <a class="button-red  pure-button" href="#">冰冻</a>
+                                <a class="button-green  pure-button" href="#">常规</a>
+                                <a class="button-blue pure-button" href="#">补充</a>
+                        	</td>
+                         </tr>
+                        
+                    </tbody>
+                </table>
+                <p>
+                	当前第1页共51页352条记录
+                	<button class="pure-button pure-button-primary">上一页</button>
+                    <button class="pure-button pure-button-primary">下一页</button>
+                </p>
+                
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
